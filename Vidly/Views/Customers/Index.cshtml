@@ -1,0 +1,15 @@
+@model List<Customer>
+
+@{
+    ViewBag.Title = "Customers";
+    Layout = "_Layout";
+}
+
+<h2>Customers</h2>
+
+<table>
+    @foreach (var customer in Model)
+    {
+        <tr><td><a asp-controller="Customers" asp-action="Show" asp-route-id="@customer.Id">@customer.Name</a></td></tr>
+    }
+</table>

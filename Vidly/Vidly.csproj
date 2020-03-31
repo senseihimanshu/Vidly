@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\..\Downloads\bootstrap.min.css">
+        <Link>wwwroot\lib\bootstrap\dist\css\bootstrap.min.css</Link>
+      </Content>
+    </ItemGroup>
+
+</Project>
